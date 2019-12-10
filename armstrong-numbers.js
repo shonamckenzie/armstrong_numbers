@@ -13,8 +13,6 @@ import { forStatement } from "@babel/types";
   digits.forEach((digit) =>{
     result += digit ** power;  
   })
-  if (result === n){
-    return true;
-  }else return false;
+  return n===result;
 };
 
